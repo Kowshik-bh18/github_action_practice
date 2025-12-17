@@ -1,0 +1,21 @@
+name: ci working
+
+on:
+  push:
+
+jobs:
+  hello_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1 - Print welcome message
+        run: echo "welcome for another push"
+
+      - name: Step 2 - Show current directory
+        run:  pwd
+
+      - name: Step 3 - List files in repo
+        run: ls
+   
+    
+  
